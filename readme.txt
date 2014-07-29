@@ -8,7 +8,7 @@ Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.Fgnu.org/licenses/gpl-2.0.html
 
-Superfero Online Course collects the template courses from superfero.com to show up your blog page
+Superfero Online Courses Plugin collects the template courses from superfero.com to show up your blog page
 
 == Description ==
 
