@@ -40,13 +40,12 @@ Actually these languages are supported:
 
 == Screenshots ==
 
-1. The 1st screenshots (screenshot-1.png)
+1. The 1st screenshot: Settings on the sidebar
+2. The 2nd screenshot: Settings -> Superfero Settings
 
-2. The 2nd screenshots (screenshot-2.png)
+3. The 3rh screenshot: 'Superfero Courses' in All Page listing
 
-3. The 3rh screenshots (screenshot-3.png)
-
-4. The 4th screenshots (screenshot-4.png)
+4. The 4th screenshot: Edit the page title, the default page name is Superfero Courses
 
 == Installation ==
 
