@@ -1,4 +1,4 @@
-=== Superfero Page===
+=== Superfero Online Courses ===
 Contributors: Superfero Online Courses
 Donate link: 
 Tags: superfero, courses, online courses, e-learning, wordpress, plugin, widget
@@ -6,7 +6,7 @@ Requires at least: 3.8
 Tested up to: 3.8.1
 Stable tag: 1.2
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.Fgnu.org/licenses/gpl-2.0.html
 
 Superfero Online Course collects the template courses from superfero.com to show up your blog page
 
@@ -31,13 +31,11 @@ The WordPress version should be at least 2.9 to use.
 Actually these languages are supported:
 
 * English
-
 * Denish
 
 = Do you have questions or issues with Superfero Widget? Use these support channels appropriately. =
 
 * [Superfero](http://www.superfero.com/)
-
 * [Support](http://wordpress.org/plugins/superfero-online-courses/)
 
 == Screenshots ==
