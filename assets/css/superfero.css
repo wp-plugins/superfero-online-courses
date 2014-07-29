@@ -1,0 +1,102 @@
+#superfero-groups {
+	position: relative;	
+	padding: 0 0 18px 0;
+	margin: auto;	
+}
+
+#superfero-groups .header {
+    position: relative;
+	font-size: 18px;	
+	padding: 36px 0 0 0;
+	color: #333;
+	font-weight: bold;
+}
+ 
+#superfero-groups .superfero-group {
+	position: relative;
+	display: inline-block;
+	width: 250px;
+	height: 145px  !important; 
+	padding: 190px  10px 10px 10px;
+	border: 4px solid #ccc;
+	margin-right: 18px;
+	margin-top: 18px;
+	overflow: hidden;	
+	-webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius:  4px 4px 0 0;
+    background: #fff;
+
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing:    content-box !important;
+	box-sizing:         content-box !important;
+} 
+
+#superfero-groups .superfero-group:first-child {
+	margin-left: 0px;
+}
+
+#superfero-groups .superfero-group > .thumb {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 250px;
+	height: 180px;
+} 
+#superfero-groups .superfero-group > .thumb img {
+	width: 250px;
+	height: 180px;
+} 
+
+#superfero-groups .superfero-group h2.name {
+	padding: 8px 0px 0px 0px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+#superfero-groups .superfero-group h2.name > a {
+	text-decoration: none;
+	color: #333;
+}
+
+#superfero-groups .superfero-group span {
+	display: block;
+	padding: 5px 0;
+	color: #75796f;
+	font-size: 13px;
+}
+
+#superfero-groups .superfero-group span.excerpt {
+	padding: 4px 0 2px 0;
+	line-height: 17px;
+}
+
+#superfero-groups .superfero-group .size,
+#superfero-groups .superfero-group .price {
+	position: absolute;
+	bottom: 8px;
+	font-size: 16px;
+	font-weight: bold; 
+	color: #333;
+	width: 90px;
+	text-align: center;
+}
+
+#superfero-groups .superfero-group .size .label,
+#superfero-groups .superfero-group .price .label {
+	font-size: 11px;
+	font-weight: normal; 
+	text-transform: uppercase;
+	color: #75796f;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+#superfero-groups .superfero-group .size {
+	left: 8px;
+}
+#superfero-groups .superfero-group .price {
+	right: 0px;
+}
