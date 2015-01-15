@@ -111,7 +111,7 @@ class Superfero_Settings {
 					'label'			=> __( 'Language' , 'superfero' ),
 					'description'	=> __( '', 'superfero' ),
 					'type'			=> 'select',
-					'options'		=> array( 'EN' => 'English' , 'DA' => 'Denish' ),
+					'options'		=> array( 'EN' => 'English' , 'DA' => 'Danish' ),
 					'default'		=> 'EN'
 				)
 			)

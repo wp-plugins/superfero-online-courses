@@ -31,7 +31,7 @@ function superfero_groups() {
 		success: function( response ) {
 			var template = [] , other = [];
 			template = response.template ;
-			other = response.other ;
+			//other = response.other ;
 			
 			if ( template.length ) {
 				jQuery.each( template, function( key, val ) {
@@ -42,6 +42,7 @@ function superfero_groups() {
 				    superfero_group( val , '#superfero-template-' + key , lang );
 				});
 			}
+			/*
 			if ( other.length ) {
 				jQuery( '<div/>' , {
 				    'class' : 'header',
@@ -56,6 +57,7 @@ function superfero_groups() {
 				    superfero_group( val , '#superfero-other-' + key , lang );
 				});
 			}
+			*/
 		} 
 	});
 }
