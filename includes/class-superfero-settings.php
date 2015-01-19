@@ -108,11 +108,8 @@ class Superfero_Settings {
 				),
 				array(
 					'id' 			=> 'language',
-					'label'			=> __( 'Language' , 'superfero' ),
-					'description'	=> __( '', 'superfero' ),
-					'type'			=> 'select',
-					'options'		=> array( 'EN' => 'English' , 'DA' => 'Danish' ),
-					'default'		=> 'EN'
+					'type'			=> 'hidden',
+					'default'		=> ''
 				)
 			)
 		);

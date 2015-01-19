@@ -5,14 +5,13 @@ jQuery( document ).ready( function ( e ) {
 });
 
 function superfero_groups() {
-	var lang = 'EN' , load_text = 'Loading...', other_text = 'In other languages:';
+	var lang = 'EN' , load_text = 'Loading...';
 
 	if (superfero_language)
 		lang = superfero_language; 
 
 	if ( lang == 'DA' ) {
 		load_text = 'Henter...';
-		other_text = 'På andre sprog:' ;
 	} 
 	
 	jQuery.ajax( {
@@ -29,35 +28,21 @@ function superfero_groups() {
 			jQuery( '.superfero-loading' ).remove();
 		},
 		success: function( response ) {
-			var template = [] , other = [];
-			template = response.template ;
-			//other = response.other ;
-			
-			if ( template.length ) {
-				jQuery.each( template, function( key, val ) {
-					jQuery( '<div/>' , {
-						'id' : 'superfero-template-' + key ,
-					    'class' :'superfero-group' ,
-					} ).appendTo( '#superfero-groups' );
-				    superfero_group( val , '#superfero-template-' + key , lang );
-				});
-			}
-			/*
-			if ( other.length ) {
-				jQuery( '<div/>' , {
-				    'class' : 'header',
-				    'html' : other_text
-				} ).appendTo( '#superfero-groups' );
-
-				jQuery.each( other, function( key, val ) {
-					jQuery( '<div/>' , {
-						'id' : 'superfero-other-' + key ,
-					    'class' : 'superfero-group' ,
-					} ).appendTo( '#superfero-groups' );
-				    superfero_group( val , '#superfero-other-' + key , lang );
-				});
-			}
-			*/
+			var template = []  ;
+			if ( response ) {
+				if ( response.courses ) {
+					template = response.courses ;
+					if ( template.length ) {
+						jQuery.each( template, function( key, val ) {
+							jQuery( '<div/>' , {
+								'id' : 'superfero-template-' + key ,
+							    'class' :'superfero-group' ,
+							} ).appendTo( '#superfero-groups' );
+						    superfero_group( val , '#superfero-template-' + key , lang );
+						});
+					}	
+				}
+			} 
 		} 
 	});
 }
@@ -92,23 +77,28 @@ function superfero_group( data , parent , lang) {
 		class : 'name'  
 	}, parent );
 
-	html = buildHTML( "span" , by_text + ' ' + data.group_lead , {
-		class : 'author'  
-	}, parent );
+	if (data.group_lead) {
+		html = buildHTML( "span" , by_text + ' ' + data.group_lead , {
+			class : 'author'  
+		}, parent );
+	}
 
-	html = buildHTML( "span" , data.excerpt , {
-		class : 'excerpt'  
-	}, parent );
+	if (data.excerpt) {
+		html = buildHTML( "span" , data.excerpt , {
+			class : 'excerpt'  
+		}, parent );
+	}
 
-	html = buildHTML( "div" , data.currency, {
-		class: 'label'  
-	});
+	if (data.price) {
+		html = buildHTML( "div" , data.currency, {
+			class: 'label'  
+		});
+		html = data.price + html;
 
-	html = data.price + html;
-
-	html = buildHTML( "div" , html , {
-		class: 'price'  
-	}, parent );
+		html = buildHTML( "div" , html , {
+			class: 'price'  
+		}, parent );
+	} 
 }
 // extract out the parameters
 function gup(n,s){

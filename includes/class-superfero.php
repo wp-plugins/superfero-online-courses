@@ -151,8 +151,9 @@ class Superfero {
     public function superfero_campaign()
     {
     	$email = get_option( SUPERFERO_OPTION . 'email' );
-		$lang = get_option( SUPERFERO_OPTION . 'language' );
-      	$superfero_api_url = SUPERFERO_API . 'api/campaignwordpressplugin?author=' . $email . '&lang=' . $lang;
+		//$lang = get_option( SUPERFERO_OPTION . 'language' );
+      	//$superfero_api_url = SUPERFERO_API . 'api/campaignwordpress?author=' . $email . '&lang=' . $lang;
+      	$superfero_api_url = SUPERFERO_API . 'api/campaignwordpress?author=' . $email ;
 		
 		$response = wp_remote_retrieve_body( wp_remote_get( $superfero_api_url, array( 'sslverify' => false ) ) );
 		
