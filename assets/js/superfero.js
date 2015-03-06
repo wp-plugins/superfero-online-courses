@@ -49,13 +49,20 @@ function superfero_groups() {
 
 function superfero_group( data , parent , lang) {
 	var html = '' ,
+		path = '' ,
 		url = '' ,
 		by_text = 'by' ;
 
-	if (superfero_host) {
-		url = superfero_host + data.path + '/' + data.slug ;
+	if ( data.path ) {
+		path = data.path ;
 	} else {
-		url = 'http://www.superfero.com/' + data.path + '/' + data.slug ;
+		path = 'course' ;
+	}
+
+	if ( superfero_host ) {
+		url = superfero_host + path + '/' + data.slug ;
+	} else {
+		url = 'http://www.superfero.com/' + path + '/' + data.slug ;
 	}
 
 	if ( lang  == "DA" ) by_text = 'af' ;
@@ -79,19 +86,19 @@ function superfero_group( data , parent , lang) {
 		class : 'name'  
 	}, parent );
 
-	if (data.group_lead) {
+	if ( data.group_lead ) {
 		html = buildHTML( "span" , by_text + ' ' + data.group_lead , {
 			class : 'author'  
 		}, parent );
 	}
 
-	if (data.excerpt) {
+	if ( data.excerpt ) {
 		html = buildHTML( "span" , data.excerpt , {
 			class : 'excerpt'  
 		}, parent );
 	}
 
-	if (data.price) {
+	if ( data.price ) {
 		html = buildHTML( "div" , data.currency, {
 			class: 'label'  
 		});
