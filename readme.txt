@@ -4,7 +4,7 @@ Donate link:
 Tags: superfero, courses, online courses, e-learning, wordpress, plugin, widget
 Requires at least: 3.8
 Tested up to: 3.8.1
-Stable tag: 2.0
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.Fgnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,10 @@ Actually these languages are supported:
 5. Go to 'Page' and select a default page named 'Superfero Course' to change the page title
 
 == Changelog ==
+
+= 2.2 =
+* 2015-03-06
+* Fix the programme link
 
 = 2.0 =
 * 2015-01-19

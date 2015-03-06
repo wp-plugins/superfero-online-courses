@@ -4,7 +4,7 @@ Plugin Name: Superfero Online Courses
 Plugin URI: http://wordpress.org/plugins/superfero-online-courses/
 Description: Superfero Online Courses Plugin collects the template courses from superfero.com to show up your blog page
 Author: Lan Nguyen
-Version: 2.0
+Version: 2.2
 Author URI: http://wordpress.org/plugins/superfero-online-courses/
 */
 /*  Copyright 2014 Lan Nguyen (email: lan.nguyen at superfero.com)

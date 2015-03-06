@@ -51,10 +51,12 @@ function superfero_group( data , parent , lang) {
 	var html = '' ,
 		url = '' ,
 		by_text = 'by' ;
-	if (superfero_host)
-		url = superfero_host + 'course/' + data.slug ;
-	else 
-		url = 'http://www.superfero.com/course/' + data.slug ;
+
+	if (superfero_host) {
+		url = superfero_host + data.path + '/' + data.slug ;
+	} else {
+		url = 'http://www.superfero.com/' + data.path + '/' + data.slug ;
+	}
 
 	if ( lang  == "DA" ) by_text = 'af' ;
 
