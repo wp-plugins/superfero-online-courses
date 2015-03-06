@@ -53,8 +53,12 @@ function superfero_group( data , parent , lang) {
 		url = '' ,
 		by_text = 'by' ;
 
-	if ( data.path ) {
-		path = data.path ;
+	if ( data.availability ) {
+		if ( data.availability == 'programme' ) {
+			path = 'programme' ;
+		} else {
+			path = 'course' ;
+		}
 	} else {
 		path = 'course' ;
 	}
